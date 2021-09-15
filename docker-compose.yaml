@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  patchman:
+    image: sidler2/patchman:latest
+    ports:
+      - "8888:80"
+    volumes:
+      - config/local_settings.py:/etc/patchman/local_settings.py
